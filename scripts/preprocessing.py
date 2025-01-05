@@ -1,17 +1,11 @@
 import re
-import nltk
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Download necessary NLTK data
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
-
-# Initialize lemmatizer and stopwords
+# Initialize stopwords and lemmatizer
+stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
-stop_words = set(stopwords.words('english'))
 
 def preprocess_text(text):
     """
@@ -19,6 +13,13 @@ def preprocess_text(text):
     :param text: Raw text string
     :return: Cleaned and preprocessed text string
     """
+    if not text:
+        return ""  # Return an empty string if the input text is empty
+    
+    # Ensure the text is a string
+    if isinstance(text, list):
+        text = " ".join(text)  # If the input is a list, join it into a single string
+    
     # Lowercase the text
     text = text.lower()
     

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Analyzer</title>
+</head>
+<body>
+    <h1>AI-Powered Resume Analyzer</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="job_description">Enter Job Description:</label>
+        <textarea id="job_description" name="job_description" rows="5" cols="40" placeholder="Enter job description here..." required></textarea>
+        
+        <label for="resumes">Upload Resumes (PDF or Text Files):</label>
+        <input type="file" id="resumes" name="resumes" multiple accept=".pdf,.txt" required>
+
+        <button type="submit">Analyze Resumes</button>
+    </form>
+</body>
+</html>
