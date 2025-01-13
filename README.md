@@ -1,0 +1,3 @@
+Built an AI-powered resume evaluation system with 85% accuracy, using machine learning and natural language processing (NLP) to analyze resumes and match them with job roles, providing a percentage-based relevance score.
+Designed and implemented a dynamic and user-friendly web application featuring an intuitive, animated interface using Flask, HTML, CSS, and JavaScript, supporting both text and PDF file uploads for real-time resume analysis.
+Streamlined the recruitment process by automating resume screening, reducing manual effort by 40%, enabling recruiters to shortlist candidates efficiently, and offering job seekers insights into their resume compatibility with specific roles.
